@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+	<title>David Magbee</title>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<style type="text/css">
+		body {
+			background-image: url(https://i.ibb.co/HY8whwW/IMG-5430.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+		div {
+			text-align: center;
+		}
+		img {
+			display: inline;
+			margin: 40px 0 0 0;
+			text-align: center;
+      		border: 3px solid white;
+      		border-radius: 20px;
+      		max-height: 250px;
+		}
+		.button {
+			background-color: rgba(125,104,114,1);
+			color: white;
+			border-radius: 20px;
+			padding: 5px;
+			text-align: center;
+			cursor: pointer;
+		}
+		h1 {
+			font-family: 'Ubuntu', sans-serif;
+			color: white;
+			text-align: center;
+			font-size: 65px;
+		}
+		h2 {
+			font-family: 'Ubuntu', sans-serif;
+			color: white;
+			text-align: center;
+			font-size: 25px;
+		}
+		h3 {
+			font-family: 'Ubuntu', sans-serif;
+			color: white;
+			text-align: center;
+			font-size: 20px;
+		}
+		article {
+			max-width: 675px;
+			margin: 0 auto;
+		}
+		p { 
+			font-family: 'Ubuntu', sans-serif;
+			color: white;
+			text-align: center;
+			font-size: 15px;
+		}
+		@media (max-width: 500px) {
+			h1 { 
+			font-size: 40px;
+			 }
+
+		}
+	</style>
+</head>
+<body link="#ffffff" vlink="#ffffff" alink="#ffffff">
+	<header>
+		<div>
+			<img src="https://i.ibb.co/hWGwMLY/Kip-s-Wedding.jpg" id="likeness">
+		</div>
+		<div>
+			<button id="change" class="button">Change Me!</button>
+		</div>
+		<h1>About Me</h1>
+	</header>
+	<article>
+		<h2>I'd like for you to get to know me a bit better...</h2>
+			<p>Hello! I'm David Magbee, and I'm thrilled to have the opportunity to share a bit about myself with you on this website I've built from scratch for the very first time using HTML, CSS, and JavaScript! </br></br>I live in the Thousands Island region of New York with my wife Nicole Caldwell, where together we run a 65-acre sustainability campus, artists' colony, animal sanctuary, and organic farm.</br>I have over a decade of experience in business development, branding, marketing, sales, in addition to experience in project coordination and event planning.</br></br>I am now following an interest in programming that I've toyed with for several years, and looking to make a major shift in my career path and opportunities.</br></br>When I'm not tending to animals, educating, or running events... I love to spend time wrenching on my motorcycle or 1977 VW Bus, or work on the LPFM radio station we have here at the farm. </p>
+	</article>
+		<article>
+		<h3>It would be my pleasure to connect...</h3>
+			<p>Contact Information</br>
+				<a href="mailto:david.magbee@me.com?subject=Let's Connect">david.magbee@me.com</a>
+					</br><a href="tel:5743292425?">574.329.2425</a>
+					</br><a href="https://www.instagram.com/magbee/">Instagram</a>		
+					</br><a href="https://www.linkedin.com/in/davidmagbee/">LinkedIn</p>
+	</article>
+	<script>
+		// Change the image of David on the page
+		var img = document.getElementById("likeness");
+
+		// img urls
+		var imgUrl1 = "https://i.ibb.co/hWGwMLY/Kip-s-Wedding.jpg";
+		var imgUrl2 = "https://i.ibb.co/6NnW7xv/Magbee-Boating.jpg";
+		var imgUrl3 = "https://i.ibb.co/QFsFkDH/Finnigan-s-Birth.jpg";
+		var imgUrl4 = "https://i.ibb.co/09fjtLZ/headshot-2.jpg";
+		var imgUrl5 = "https://i.ibb.co/t41kBDC/headshot.jpg";
+
+		var button = document.getElementById('change');
+
+		button.addEventListener('click', toggleImage);
+
+		function toggleImage(){
+			if (img.src == imgUrl1) {
+				img.src = imgUrl2;
+			} 
+			else if (img.src == imgUrl2) {
+				img.src = imgUrl3;
+			}
+			else if (img.src == imgUrl3) {
+				img.src = imgUrl4;
+			}
+			else if (img.src == imgUrl4) {
+				img.src = imgUrl5;
+			}
+			else {
+				img.src = imgUrl1;
+			}
+		}
+	</script>
+</body>
