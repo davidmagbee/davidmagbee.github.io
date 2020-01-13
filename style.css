@@ -1,17 +1,17 @@
+/* html {
+    background-image: url('https://i.ibb.co/sWWHctj/IMG-2757.jpg' alt="Butterfield Lake");
+    background-size: cover;
+    background-position: center;
+} */
+
 header {
-
+    grid-row: 1 / span 2;
+    grid-column: 1;
 }
-
-nav { 
-
-}
-
 
 h1 {
     font-family: 'Kulim Park', sans-serif;
     font-size: 60px;
-    grid-row: 1 / span 2;
-    grid-column: 1;
 }
 
 h2 {
@@ -19,31 +19,60 @@ h2 {
     grid-column: 3 / span 4;
 }
 
-body {
+/* testing out some other layout options */
+/* body {
     font-family: 'Kulim Park', sans-serif;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+} */
+
+body {
+    font-family: 'Kulim Park', sans-serif;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 ul {
     list-style: none;
 }
 
-main { 
+/* main { 
     grid-row: 3;
     grid-column: 1 / span 3;
+} */
+
+main {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 aside {
-    grid-row: 2;
-    grid-column: 1;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 footer {
     grid-row: 3;
     grid-column: 2;
+}
+
+img {
+    object-fit: contain;
+    object-position: 50% 50%;
 }
 
 .container {
@@ -55,16 +84,40 @@ footer {
     flex-wrap: wrap;
 }
 
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 #dash1 {
-    
+    background-image: url=("images/dash1.png") alt="dash1";
+    background-size: contain;
+    border: 3px solid black;
+    border-radius: 0px;
+    padding: 0px;
+    max-height: 250px;
+    max-width: 250px;
 }
 
 #dash2 {
-
+    background-image: url=("images/dash2.png") alt="dash2";
+    object-fit: contain;
+    border: 3px solid black;
+    border-radius: 0px;
+    padding: 0px;
+    max-height: 250px;
+    max-width: 250px;
 }
 
 #dash3 {
-
+    background-image: img src="images/dash3.png" alt="dash3";
+    object-fit: scale-down;
+    border: 3px solid black;
+    border-radius: 0px;
+    padding: 0px;
+    max-height: 250px;
+    max-width: 250px;
 }
 
 .life {
