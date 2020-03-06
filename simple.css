@@ -30,7 +30,7 @@ ul.header li a {
   font-size: 24px;
   margin-bottom: -20px;
   padding: 0px 10px;
-  width: 33.33%;
+  /* width: 33.33%; */
   display: grid;
   grid-row: 5;
   grid-column: 1;
@@ -59,8 +59,9 @@ img {
 }
 
 .container {
+  background-color: #01abaa;
   display: flex;
-  margin: 0 auto;
+  margin: -20px auto;
   padding: 20px;
   flex-direction: row;
   justify-content: space-around;
