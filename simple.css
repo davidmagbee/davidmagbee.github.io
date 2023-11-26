@@ -1,9 +1,10 @@
 body {
   font-family: "Kulim Park", sans-serif;
   margin: auto;
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr, 1fr, 1fr;
-  grid-template-rows: 200px 200px 100px 1fr 1fr 1fr 100px;
+  grid-template-rows: 200px 200px 100px 1fr 1fr 1fr 100px; */
+  background-color: #0374B3;
 }
 
 a:hover, a:active {
@@ -89,7 +90,7 @@ img {
 .container {
   background-color: #0374B3;
   display: flex;
-  margin: -16px auto;
+  margin: auto;
   padding: 20px;
   flex-direction: row;
   justify-content: space-around;
