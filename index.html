@@ -4,57 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="David Magbee | Software Engineer | Let's Work Together">
-    <title>David Magbee | Let's Work Together</title>
-    <link href="simple.css" rel="stylesheet" type="text/css">
+    <meta name="description" content="David Magbee | Software Developer">
+    
+    <!--CSS Styles -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Kulim+Park&display=swap" rel="stylesheet">
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <title>David Magbee | Full Stack Developer, Educator</title>
 </head>
     <body>
     <div>
-        <header>
+        <!-- Navbar -->
+        <nav>
             <div class="name">
                 <h1>David Magbee</h1>
-                <h5 class="lede">Software Developer | Homesteader | Radio DJ</h5>
+                <h5 class="lede">Software Developer | Educator </h5>
             </div>
-            <ul class="header">
-                <li><a href="pages/about.html" target="_blank">About</a></li>
+            <ul class="navigation">
+                <!-- TODO: Remove old about page -->
+                <li><a href="#about" class="nav-link" target="_blank">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <!-- TODO: Justify Right -->
                 <li><a href="https://github.com/davidmagbee/" target="_blank">GitHub</a></li>
                 <li><a href="https://www.linkedin.com/in/davidmagbee/" target="_blank">LinkedIn</a></li>
                 <li><a href="mailto:david.magbee@me.com?subject=Let's Connect">Email</a></li>
                 <li><a href="assets/magbee-resume.pdf" target="_blank">Resume</a></li>
             </ul>  
-        </header>
+            
+            <button class="burger-menu" id="burger-menu">
+                <ion-icon class="bars" name="menu-outline"></ion-icon>
+            </button>
+        </nav>
         
-        <main>
-            <div class="clearfix">
-                <h2 class="container">Oh, hello! My name is David Magbee, and I am delighted to have you visit this page. <br>
+        <!-- Hero Section -->
+        <section class="hero" id="about">
+            <img
+              src="assets/images/wfh.png"
+              alt="developer-wfh"
+              loading="lazy"
+              class="hero-img"
+            />
+            <div class="bio animate__animated animate__headShake">
+              <h2 class="bio-title">About Me</h2>
+              <p class="bio-text">
+                I am a full-stack developer who approaches projects with humans and purpose in mind. 
+                I am passionate about developing efficiencies that improve workflow and create space 
+                for creative collaboration and innovation. I am a firm believer in empowering individuals 
+                and teams through structured educational guidance so that they may reach personal and professional goals.
+              </p>
+            </div>
+      </section>
 
-                    <br>This page is currently under reconstruction to give it a fresh look, add new content, and 
-                    to update it with updated examples of my current skills. <br>
-                    <br>
-                    That said, as a new father I have been focused on these precious moments with my little one. <br>
-                    <br>In the meantime, please reach out via email or LinkedIn, I'd love to connect and discuss working together!
+        <!-- More about -->
 
-                </h2>
-            </div>
-        <!-- <div class="clearfix">
-            <div class="container">
-                <div class="card"><a href="https://better-blurbs.herokuapp.com/" target="_blank"><img src="images/blurbs-about.png" alt="blurbs"></a></div>
-                <div class="card"><a href="https://rise-and-headline.netlify.com/" target="_blank"><img src="images/rise.png" alt="rise-and-headline"></a></div>
-                <div class="card"><a href="https://davidmagbee.github.io/better-farm-trivia/" target="_blank"><img src="images/bf-trivia.png" alt="better-farm-trivia"></a></div>
-                <div class="card"><a href="https://teamgridapp.herokuapp.com/" target="_blank"><img src="images/teamgrid.png" alt="teamgrid"></a></div>
-            </div>
-        </div> -->
-        </main>
-        
-        <!-- <footer>
-            <div class="social"></div>
-                <div id="git"><a href="https://github.com/davidmagbee/">GitHub</a></div>
-                <div id="in"><a href="https://www.linkedin.com/in/davidmagbee/">LinkedIn</a></div>
-                <div id="mail"><a href="mailto:david.magbee@me.com?subject=Let's Connect">Email</a></div>
-            </div>
-        </footer> -->
+        <!-- Skills section -->
+
+        <!-- Projects section -->
+
+        <!-- Contact section -->
+
+        <!-- Social accounts - Fixed to the right -->
+
+        <!-- Scroll to top -->
+
+        <!-- Footer section -->
     </div>
-        <script></script>
+    <!-- Ion icons scripts -->
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="assets/js/app.js"></script>
     </body>
 </html>

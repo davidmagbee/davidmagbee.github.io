@@ -11,16 +11,16 @@ a:hover, a:active {
     background-color: #e65632;
   }
 
-ul.header li {
+ul.navigation li {
   display: inline;
   list-style-type: none;
   margin: 0;
 }
-ul.header {
+ul.navigation {
   background-color: #212527;
   padding: 0;
 }
-ul.header li a {
+ul.navigation li a {
   color: #fff;
   font-weight: bold;
   text-decoration: none;
@@ -28,6 +28,10 @@ ul.header li a {
   padding: 20px;
   display: inline-block;
 }
+
+/* .social {
+  text-align: right;
+} */
 
 .name {
   background-color: #0374B3;
@@ -40,9 +44,11 @@ ul.header li a {
   grid-row: 5;
   grid-column: 1;
 }
+
 /* h5 {
     text-align: right;
 } */
+
 .lede {
     margin: -30px 3px;
 }
@@ -55,14 +61,7 @@ footer {
   flex-wrap: wrap;
 }
 
-.social {
-  background-color: #fff;
-  margin: 10px;
-  border: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+
 
 img {
     position: absolute;
@@ -89,6 +88,7 @@ img {
 
 .container {
   background-color: #0374B3;
+  text-align: center;
   display: flex;
   margin: auto;
   padding: 20px;
