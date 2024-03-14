@@ -149,6 +149,14 @@ nav ul li {
   margin: 10px;
 }
 
+.skill:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.skill:nth-child(3) {
+  transition-delay: 400ms;
+}
+
 .projects {
   background-color: var(--bg-color);
   padding: 32px 0;
@@ -177,6 +185,14 @@ nav ul li {
   padding: 1rem;
 }
 
+.project-card:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.project-card:nth-child(3) {
+  transition-delay: 400ms;
+}
+
 .project-container p {
   padding: 0.4rem;
 }
@@ -193,7 +209,6 @@ nav ul li {
   background-color: #fff;
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--primary-shadow);
-  padding: 20px;
   margin: 10px;
 }
 
@@ -291,7 +306,20 @@ footer {
   margin: 2rem 0 0;
 }
 
-/* Media queries for responsiveness */
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+/* Media queries for responsiveness & animations*/
 @media screen and (max-width: 720px) {
   nav {
     padding: 1.5rem 1rem;
@@ -383,5 +411,11 @@ footer {
 
   .contact-form-container {
     max-width: 17.75rem;
+  }
+}
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
   }
 }
